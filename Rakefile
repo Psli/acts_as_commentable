@@ -4,7 +4,7 @@ require 'rake/testtask'
 
 PLUGIN = "acts_as_commentable"
 GEM = "acts_as_commentable"
-GEM_VERSION = "3.0.1"
+GEM_VERSION = "3.2.1"
 EMAIL = "unknown@juixe.com"
 HOMEPAGE = "http://www.juixe.com/techknow/index.php/2006/06/18/acts-as-commentable-plugin/"
 SUMMARY = "Plugin/gem that provides comment functionality"
@@ -13,16 +13,12 @@ spec = Gem::Specification.new do |s|
   s.name = GEM
   s.version = GEM_VERSION
   s.platform = Gem::Platform::RUBY
-  s.has_rdoc = false
   s.extra_rdoc_files = ["README.rdoc", "MIT-LICENSE"]
   s.summary = SUMMARY
   s.description = s.summary
   s.author = 'Cosmin Radoi, Jack Dempsey, Xelipe, Chris Eppstein'
   s.email = EMAIL
   s.homepage = HOMEPAGE
-
-  # Uncomment this to add a dependency
-  # s.add_dependency "foo"
 
   s.require_path = 'lib'
   s.autorequire = GEM
